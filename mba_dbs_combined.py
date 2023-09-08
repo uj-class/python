@@ -1,29 +1,6 @@
-def mba(a, b):
-#MBA - Multiply by Addition
-	x = 0
-	i = 0
 
-	while(i < b):
-			x = x + a
-			i += 1
-
-	return x
-
-############################
-
-def dbs(a, b):
-#DBS - Divide by Substract
-
-	x = a
-	i = 0
-
-	while(x != 0):
-			x = x-b
-			i += 1
-			
-	return i
-
-###########################
+from dbs_module import dbs
+from mba_module import mba
 
 # let the user decide - mba or dba
 
@@ -41,13 +18,9 @@ def compute():
 
 	print(f"The result is: {var}")
 
-compute()
-
-while 1:
+cont = "yes"
+while cont == "yes":
+	compute()
 	cont=input("Do you want to continue: (yes/no)")
-	if(cont == "yes"):
-		compute()
-		continue
-	else:
-		break
-	print('continuing...')
+	if cont == "yes":
+		print("continuing...")
