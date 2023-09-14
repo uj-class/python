@@ -1,5 +1,6 @@
 from fibonacci_n_module import fibonacci
-n = input("enter n")
+print("enter n:")
+n = input()
 x = int(n)
 o = fibonacci(x)
 print(o)
